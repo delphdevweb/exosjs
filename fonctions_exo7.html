@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Faire une fonction qui prend deux paramètres : age et genre. 
+//Le paramètre genre peut prendre comme valeur Homme ou Femme. 
+//La fonction doit renvoyer en fonction des paramètres (gérer tous les cas) : 
+//Vous êtes un homme et vous êtes majeur Vous êtes un homme et vous êtes mineur 
+//Vous êtes une femme et vous êtes majeur Vous êtes une femme et vous êtes mineur     
+    function param (genre, age) {
+        if (genre=='homme' && age >= 18) return "Vous êtes un homme et vous êtes majeur";
+        else if (genre=='homme' && age < 18) return "Vous êtes un homme et vous êtes mineur";
+        else if (genre=='femme' && age >= 18) return "Vous êtes une femme et vous êtes majeur";
+        else return "Vous êtes une femme et vous êtes mineur";
+    }
+    console.log(param('femme', 17));
+    </script>
+</body>
+</html>

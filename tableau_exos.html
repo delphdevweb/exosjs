@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Exo 1: Créer un tableau mois et l'initialiser avec le nom des douze mois de l'année.
+    const annee = [
+        'Janvier',
+        'Février',
+        'Mars',
+        'Avril',
+        'Mai',
+        'Juin',
+        'Juillet',
+        'Aout',
+        'Septembre',
+        'Octobre',
+        'Novembre',
+        'Décembre'
+    ]
+    console.log(annee);
+
+//Exo 2: Avec le tableau de l'exercice 1, afficher la valeur de la troisième ligne de ce tableau.
+    console.log(annee[2]);
+
+//Exo 3: Avec le tableau de l'exercice , afficher la valeur de l'index 5.
+    console.log(annee[5]);
+//Exo 4: Avec le tableau de l'exercice 1, modifier le mois de aout pour lui ajouter l'accent manquant.
+    annee[7] = "Août";
+    console.log(annee);
+//Exo 5: Créer un tableau associatif avec comme index le numéro des départements des Hauts de France et en valeur leur nom.
+    let hautDeFrance = [];
+        hautDeFrance[02] = "Aisne";
+        hautDeFrance[59] = "Nord";
+        hautDeFrance[60] = "Oise";
+        hautDeFrance[62] = "Pas-de-Calais";
+        hautDeFrance[80] = "Somme"; 
+    console.log(hautDeFrance);
+//Exo 6: Avec le tableau de l'exercice 5, afficher la valeur de l'index 59.
+        console.log(hautDeFrance[59]);
+//Exo 7: Avec le tableau de l'exercice 5, ajouter la ligne correspondant au département de la ville de Reims.
+        hautDeFrance [51] = "Marne";
+        console.log(hautDeFrance);
+//Exo 8: Avec le tableau de l'exercice 1 et une boucle, afficher toutes les valeurs de ce tableau.
+        for (let element in annee) {
+            console.log(annee[element]);
+        }
+//Exo 9: Avec le tableau de l'exercice 5, afficher toutes les valeurs de ce tableau.
+        for (let element in hautDeFrance) {
+             console.log(hautDeFrance[element]);
+        }
+//Exo 10: Avec le tableau de l'exercice 5, afficher toutes les valeurs de ce tableau ainsi que 
+//les clés associés. Cela pourra être, par exemple, de la forme : 
+//"Le département" + nom_departement + "a le numéro" + num_departement
+        for (let key in hautDeFrance) {
+             let element = hautDeFrance[key]
+             console.log('Le département ' + element + " a le numéro " + key );
+        } 
+    </script>
+</body>
+</html>
